@@ -18,7 +18,7 @@ def send_number():
 
 def validate_code(phone_number):
     url = base_url+"sms/validate?auth_type=sms"
-    otp_code = input(f"Enter the tinder code sent to {phone_number}: ")
+    otp_code = input("Enter the tinder code sent to {phone_number}: ")
     data = {
             "otp_code": otp_code,
             "phone_number": phone_number
